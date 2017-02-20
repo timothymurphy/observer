@@ -1,16 +1,14 @@
 /**
- * @author zambeezy
+ * Created by Peeke on 2/20/17.
  */
-
 package HW6.observer;
 
-public class ZambelliConditionsDisplay implements Observer, DisplayElement
-{
+public class PeekeConditionsDisplay implements Observer, DisplayElement {
     private float temperature;
     private float humidity;
     private Subject weatherData;
 
-    public ZambelliConditionsDisplay(Subject weatherData) {
+    public PeekeConditionsDisplay(Subject weatherData) {
         this.weatherData = weatherData;
         weatherData.registerObserver(this);
     }
@@ -22,7 +20,7 @@ public class ZambelliConditionsDisplay implements Observer, DisplayElement
     }
 
     public void display() {
-        System.out.println("Zambelli Current conditions: " + temperature
+        System.out.println("Peeke Current conditions: " + temperature
                 + "F degrees and " + humidity + "% humidity");
     }
 }

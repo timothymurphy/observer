@@ -22,7 +22,7 @@ public class ZambelliConditionsDisplay implements Observer, DisplayElement
     }
 
     public void display() {
-        System.out.println("Schaper Current conditions: " + temperature
+        System.out.println("Zambelli Current conditions: " + temperature
                 + "F degrees and " + humidity + "% humidity");
     }
 }

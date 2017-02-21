@@ -3,13 +3,13 @@
  */
 package HW6.observer;
 
-public class PeekeConditionsDisplay implements Observer, DisplayElement
+public class MurphyConditionsDisplay implements Observer, DisplayElement
     {
     private float temperature;
     private float humidity;
     private Subject weatherData;
 
-    public PeekeConditionsDisplay(Subject weatherData)
+    public MurphyConditionsDisplay(Subject weatherData)
     {
         this.weatherData = weatherData;
         weatherData.registerObserver(this);
